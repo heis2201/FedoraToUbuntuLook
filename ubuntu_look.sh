@@ -7,7 +7,7 @@
 # "sudo" conmmand is used to dnf install...
 # - yaru theme
 # - gnome-shell-user-extension-user-theme
-# - gnome-tweaks to set icons, theme, mouse pointer later. 
+# - gnome-tweaks 
 # - unzip
 
 # install yaru-theme gnome-shell-extension-user-theme gnome-tweaks unzip
