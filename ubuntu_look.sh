@@ -75,25 +75,6 @@ TERMINAL=gnome-terminal bash ./atom.sh
 cd ~
 rm -rf "$HOME/$TEMP_DL_DIR"
 
-# Optional way git cloning the entire repo, then executing select shell scripts that install specific profiles
-# see https://github.com/Gogh-Co/Gogh and https://github.com/Gogh-Co/Gogh/blob/master/installs/clone-of-ubuntu.sh
-# generate random directory for gogh script. will be deleted afterwards
-# TEMP_DL_DIR=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 12)
-#mkdir -p "$HOME/$TEMP_DL_DIR"
-#cd "$HOME/$TEMP_DL_DIR"
-# Download and execute Gogh scripts for "Clone of Ubuntu" terminal look
-#git clone https://github.com/Gogh-Co/Gogh.git gogh
-#cd gogh
-# necessary in the Gnome terminal on ubuntu
-#export TERMINAL=gnome-terminal
-# Enter theme installs dir
-#cd installs
-# install themes
-#./atom.sh
-#./dracula.sh
-#./clone-of-ubuntu.sh
-#rm -rf "$HOME/$TEMP_DL_DIR"
-
 # didnt manage yet to set "Clone Of Ubuntu" as new default profile.
 # extracting the correct UUID from the gnome terminal profiles didn't work
 # need to set up manually in Terminal
