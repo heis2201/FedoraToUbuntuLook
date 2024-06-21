@@ -56,7 +56,6 @@ export TERMINAL=gnome-terminal
 cd installs
 # install themes
 ./atom.sh
-./clo
 ./dracula.sh
 ./clone-of-ubuntu.sh
 rm -rf "$HOME/$TEMP_DL_DIR"
