@@ -18,7 +18,7 @@ sudo dnf --refresh -y install yaru-theme gnome-shell-extension-user-theme gnome-
 # download ubuntu font family to ~/.fonts and unzip
 mkdir -p ~/.fonts
 curl -o ~/.fonts/ubuntu.zip https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
-unzip -j ~/.fonts/ubuntu.zip -d ~/.fonts
+unzip -j -n ~/.fonts/ubuntu.zip -d ~/.fonts
 # delete txt files and font zip archive
 rm ~/.fonts/*.txt
 rm ~/.fonts/ubuntu.zip
