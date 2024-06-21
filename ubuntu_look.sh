@@ -3,6 +3,7 @@
 # v0.0.2
 # create date: 2024-06-14
 # modify date: 2024-06-21
+# changelog: changing the way gogh is applied, now cloning entire git repo, applying three scripts, and then removing git repo agin
 #
 # "sudo" conmmand is used to dnf install...
 # - yaru theme
