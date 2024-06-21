@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-# v0.0.2
+# v0.0.3
 # create date: 2024-06-14
 # modify date: 2024-06-21
-# changelog: changing the way gogh is applied, now cloning entire git repo, applying three scripts, and then removing git repo agin
 #
 # "sudo" conmmand is used to dnf install...
 # - yaru theme
@@ -62,8 +61,10 @@ wget https://github.com/Gogh-Co/Gogh/raw/master/installs/clone-of-ubuntu.sh
 chmod +x *.sh
 TERMINAL=gnome-terminal
 TERMINAL=gnome-terminal bash ./clone-of-ubuntu.sh
-# cd ~
-# rm -rf "$HOME/$TEMP_DL_DIR"
+TERMINAL=gnome-terminal bash ./selenized-dark.sh
+TERMINAL=gnome-terminal bash ./atom.sh
+cd ~
+rm -rf "$HOME/$TEMP_DL_DIR"
 
 # Optional way git cloning the entire repo, then executing select shell scripts that install specific profiles
 # see https://github.com/Gogh-Co/Gogh and https://github.com/Gogh-Co/Gogh/blob/master/installs/clone-of-ubuntu.sh
