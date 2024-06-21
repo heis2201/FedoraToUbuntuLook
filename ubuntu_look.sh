@@ -8,11 +8,29 @@
 # - yaru theme
 # - gnome-shell-user-extension-user-theme
 # - gnome-tweaks 
-
 # install yaru-theme gnome-shell-extension-user-theme gnome-tweaks unzip
+clear -x
+echo "This script will install the yaru-theme, apply it to Gnome Shell, icons, and mouse cursor."
+echo "Additionally, the Ubuntu look will be applied to Gnome Terminal, and Ubuntu fonts will be set"
+echo "Gedit color scheme will be set to Solarized Dark."
+echo ""
 echo "sudo command will only be used once to install:" 
-echo "yaru-theme gnome-shell-extension-user-theme gnome-tweaks"
+echo "- yaru-theme" 
+echo "- gnome-shell-extension-user-theme"
+echo ""
 echo "All other commands run as regular user commands without elevated priviliges"
+
+# Continue
+while true; do
+    read -p "Do you wish to proceed? (Y/N): " yn
+    case $yn in
+        [Yy]* ) echo "Proceeding..."; break;;
+        [Nn]* ) echo "Aborting..."; exit 1;;
+        * ) echo "Please answer Y or N.";;
+    esac
+done
+
+
 sudo dnf --refresh -y install \
   gnome-shell-theme-yaru \
   yaru-gtk2-theme \
