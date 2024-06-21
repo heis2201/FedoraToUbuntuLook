@@ -47,11 +47,18 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 TEMP_DL_DIR=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 12)
 mkdir -p "$HOME/$TEMP_DL_DIR"
 # Download and execute Gogh scripts for "Clone of Ubuntu" terminal look
-wget -P "$HOME/$TEMP_DL_DIR" https://raw.githubusercontent.com/Gogh-Co/Gogh/master/installs/clone-of-ubuntu.sh
-wget -P "$HOME/$TEMP_DL_DIR" https://raw.githubusercontent.com/Gogh-Co/Gogh/master/apply-colors.sh
-chmod +x "$HOME/$TEMP_DL_DIR/clone-of-ubuntu.sh"
-chmod +x "$HOME/$TEMP_DL_DIR/apply-colors.sh"
-"$HOME/$TEMP_DL_DIR/clone-of-ubuntu.sh"
+mkdir -p "$HOME/$TEMP_DL_DIR"
+git clone https://github.com/Gogh-Co/Gogh.git gogh
+cd gogh
+# necessary in the Gnome terminal on ubuntu
+export TERMINAL=gnome-terminal
+# Enter theme installs dir
+cd installs
+# install themes
+./atom.sh
+./clo
+./dracula.sh
+./clone-of-ubuntu.sh
 rm -rf "$HOME/$TEMP_DL_DIR"
 
 # didnt manage yet to set "Clone Of Ubuntu" as new default profile.
