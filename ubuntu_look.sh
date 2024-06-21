@@ -22,13 +22,13 @@ echo "All other commands run as regular user commands without elevated privilige
 
 while true; do
     read -p "Do you wish to proceed? (Y/N): " yn
-    echo "User input: $yn"  # Debug statement
     case $yn in
         [Yy]* ) echo "Proceeding..."; break;;
         [Nn]* ) echo "Aborting..."; exit 1;;
-        * ) echo "Please answer Y or N.";;
+        * ) echo "Invalid input: $yn. Please answer Y or N.";;
     esac
 done
+
 sudo dnf --refresh -y install \
   gnome-shell-theme-yaru \
   yaru-gtk2-theme \
