@@ -46,8 +46,8 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 # generate random directory for gogh script. will be deleted afterwards
 TEMP_DL_DIR=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 12)
 mkdir -p "$HOME/$TEMP_DL_DIR"
+cd "$HOME/$TEMP_DL_DIR"
 # Download and execute Gogh scripts for "Clone of Ubuntu" terminal look
-mkdir -p "$HOME/$TEMP_DL_DIR"
 git clone https://github.com/Gogh-Co/Gogh.git gogh
 cd gogh
 # necessary in the Gnome terminal on ubuntu
