@@ -9,7 +9,7 @@
 # - gnome-shell-user-extension-user-theme
 # - gnome-tweaks 
 # install yaru-theme gnome-shell-extension-user-theme gnome-tweaks unzip
-clear -x
+# clear -x
 echo "This script will install the yaru-theme, apply it to Gnome Shell, icons, and mouse cursor."
 echo "Additionally, the Ubuntu look will be applied to Gnome Terminal, and Ubuntu fonts will be set"
 echo "Gedit color scheme will be set to Solarized Dark."
