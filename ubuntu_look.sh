@@ -46,8 +46,8 @@ gsettings set org.gnome.desktop.interface icon-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
 
-#Set GEDIT profile to solarized dark
-gsettings set org.gnome.gedit.preferences.editor 'solarized-dark'
+#Set GEDIT scheme to solarized dark
+gsettings set org.gnome.gedit.preferences.editor scheme 'solarized-dark'
 
 # Install Gogh terminal profile "Clone of Ubuntu"
 # see https://github.com/Gogh-Co/Gogh and https://github.com/Gogh-Co/Gogh/blob/master/installs/clone-of-ubuntu.sh
