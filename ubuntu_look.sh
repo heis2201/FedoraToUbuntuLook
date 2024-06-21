@@ -19,16 +19,9 @@ echo "- yaru-theme"
 echo "- gnome-shell-extension-user-theme"
 echo ""
 echo "All other commands run as regular user commands without elevated priviliges"
-
-while true; do
-    read -p "Do you wish to proceed? (Y/N): " yn
-    case $yn in
-        [Yy]* ) echo "Proceeding..."; break;;
-        [Nn]* ) echo "Aborting..."; exit 1;;
-        * ) echo "Invalid input: $yn. Please answer Y or N.";;
-    esac
-done
-
+read -p "Press Enter to continue..."
+echo "Proceeding..."
+echo ""
 sudo dnf --refresh -y install \
   gnome-shell-theme-yaru \
   yaru-gtk2-theme \
