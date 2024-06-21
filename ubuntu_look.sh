@@ -9,13 +9,18 @@
 # - yaru theme
 # - gnome-shell-user-extension-user-theme
 # - gnome-tweaks 
-# - unzip
 
 # install yaru-theme gnome-shell-extension-user-theme gnome-tweaks unzip
 echo "sudo command will only be used once to install:" 
 echo "yaru-theme gnome-shell-extension-user-theme gnome-tweaks"
 echo "All other commands run as regular user commands without elevated priviliges"
-sudo dnf --refresh -y install yaru-theme gnome-shell-extension-user-theme gnome-tweaks
+sudo dnf --refresh -y install \
+  gnome-shell-theme-yaru \
+  yaru-gtk2-theme \
+  yaru-gtk3-theme \
+  yaru-gtk4-theme \
+  yaru-icon-theme \
+  gnome-shell-extension-user-theme
 # download ubuntu font family to ~/.fonts and unzip
 mkdir -p ~/.fonts
 curl -o ~/.fonts/ubuntu.zip https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
