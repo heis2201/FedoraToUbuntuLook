@@ -12,7 +12,7 @@
 
 # install yaru-theme gnome-shell-extension-user-theme gnome-tweaks unzip
 echo "sudo command will only be used once to install:" 
-echo "yaru-theme gnome-shell-extension-user-theme gnome-tweaks, and unzip"
+echo "yaru-theme gnome-shell-extension-user-theme gnome-tweaks"
 echo "All other commands run as regular user commands without elevated priviliges"
 sudo dnf --refresh -y install yaru-theme gnome-shell-extension-user-theme gnome-tweaks
 # download ubuntu font family to ~/.fonts and unzip
@@ -39,6 +39,9 @@ gsettings set org.gnome.shell.extensions.user-theme name 'Yaru-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
+
+#Set GEDIT profile to solarized dark
+gsettings set org.gnome.gedit.preferences.editor 'solarized-dark'
 
 # Install Gogh terminal profile "Clone of Ubuntu"
 # see https://github.com/Gogh-Co/Gogh and https://github.com/Gogh-Co/Gogh/blob/master/installs/clone-of-ubuntu.sh
