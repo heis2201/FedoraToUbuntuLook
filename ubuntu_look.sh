@@ -20,6 +20,7 @@ sudo dnf --refresh -y install \
   yaru-gtk3-theme \
   yaru-gtk4-theme \
   yaru-icon-theme \
+  yaru-gtksourceview-theme \
   gnome-shell-extension-user-theme
 # download ubuntu font family to ~/.fonts and unzip
 mkdir -p ~/.fonts
