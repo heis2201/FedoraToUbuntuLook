@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# v0.0.1
+# v0.0.2
 # create date: 2024-06-14
-# modify date: 2024-06-14
+# modify date: 2024-06-21
 #
 # "sudo" conmmand is used to dnf install...
 # - yaru theme
