@@ -1,4 +1,4 @@
-# FedoraToUbuntuLook
+# Fedora To Ubuntu Look
 # Make Gnome in Fedora Workstation look like in Ubuntu
 
 Do you love Fedora Workstation (Gnome) but prefer the look of Ubuntu's Gnome desktop? 
